@@ -2,6 +2,7 @@
 // Required for Node to read .env file
 const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
+const logger = require('./loggerMiddleware');
 
 // required for communicating and connecting to the database
 // and perform CRUD operations
